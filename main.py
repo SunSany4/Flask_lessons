@@ -46,9 +46,9 @@ def logout():
     return redirect("/")
 
 
-def main():
-    db_session.global_init("db/blogs.db")
-    app.run()
+# def main():
+#
+#     app.run()
 
 
 @app.route('/news', methods=['GET', 'POST'])
