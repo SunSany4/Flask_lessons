@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <meta charset="UTF-8">
+    {% if 'инженер' in prof or 'строитель' in prof %}
+        <h2 align="center">Инженерные тренажеры</h2>
+        <img src="{{ url_for('static', filename='img/owl.jpeg')}}" alt="here should be a scheme">
+    {% else %}
+        <h2 align="center">Научные симуляторы</h2>
+        <img src="" alt="here should be a scheme">
+    {% endif%}
+{% endblock %}
